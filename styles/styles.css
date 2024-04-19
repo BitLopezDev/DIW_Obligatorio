@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
+:root{
+    --bigwidth: 1440px;
+    --notsobigwidth:1200px;
+    --font:"Molengo", sans-serif;
+    /*Main colors*/
+    --blue: #0c5efb;
+    --cyan:#2bf4fe;
+    --grey:#e6e6e6;
+    /*Secondary colors*/
+    --light-blue: #a1d6fe;
+    --light-cyan: #89fffc;
+    --dark-blue: #002867;
+    --dark-cyan: #00608c;
+    /*Accent colors*/
+    -orange: #f2994a;
+    --green: #5cb85c;
+    --pink: #f7cac9;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+}
+
+body *:not(header, header *, footer, footer *) {
+    margin-left: 40px;
+}
+
+nav {
+    width: 100%;
+    height: 120px;
+    background-color: white ;
+    display: flex;
+    align-items: center;
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+}
+
+nav div p{
+    font-size: 3em;
+    color:var(--blue)
+}
+
+nav div svg{
+    height:100px;
+    align-items: center;
+}
+
+
+nav ul{
+
+    display: flex;
+    margin-left: auto;
+    list-style-type: none;
+}
+nav ul li{
+    margin:10px
+}
+nav ul li a, nav ul li a:visited{
+    color:var(--blue);
+    text-decoration: none;
+    font-size: 1.2em;
+    
+}
+nav ul li a:hover {
+    text-decoration: underline;;
+
+}
+
+/*Main*/
+main {
+    margin-top: 120px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color:var(--blue);
+}
+
+h1{
+    font-size: 4em;
+}
+main section {
+    min-width: 1200px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main section:first-child{
+    display: flex;
+    justify-content: center;
+    
+}  
+main section:first-child  svg {
+    margin-top: -100px;
+    width: 650px;
+    height: 650px;
+   
+  }
+
+.vertical {
+display: flex;
+align-items: center;
+flex-direction: column;
+/* background-color: red; */
+}
+.top1st{
+    text-align: center;
+    margin-top:100px;
+    margin-right: 150px;
+}
+.top1st p {
+    font-size:1.4em;
+    margin: 0;
+    padding: 0;
+    max-width: 400px;
+}
+.top1st h1{
+  margin: 0 auto;
+}
+  
