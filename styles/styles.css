@@ -214,12 +214,11 @@ section:nth-child(even) {
 /*Dates Section*/
 #datesHeader {
     margin-top: 150px;
+    padding-top: 30px;
 }
 
-/*Ticket section*/
-
 #dateCards {
-    background-color: blue;
+    /* background-color: blue; */
     width: 100%;
     height: 500px;
     display: flex;
@@ -228,11 +227,59 @@ section:nth-child(even) {
 }
 
 .cardDate {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     height: 300px;
-    width: 200px;
+    width: 270px;
     background-color: white;
     margin: 0 auto;
+    border-radius: 5px;
 }
+
+.cardDate header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cardDate h3 {
+    font-size: 5em;
+    text-align: center;
+}
+
+.cardDate h3 sup {
+    font-size: 0.5em;
+}
+
+.cardDate h3+p {
+    font-size: 3em;
+    text-align: center;
+    color: var(--dark-cyan);
+}
+
+.cardDate a,
+.TicketA {
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    padding: 10px 50px;
+    margin: 25px auto 10px auto;
+    border: 2px solid var(--grey);
+    border-radius: 5px;
+    color: var(--dark-cyan);
+}
+
+.cardDate a:hover,
+.TicketA:hover {
+    width: 220px;
+    color: var(--grey);
+    background-color: var(--dark-cyan);
+}
+
+/*Ticket section*/
+
 
 
 #ticketHeader {
@@ -245,13 +292,13 @@ section:nth-child(even) {
 
     justify-content: space-between;
 
-    height: 900px;
+    height: 1050px;
     /* background-color: blue; */
     width: 1440px;
 }
 
 .ticket:not(:nth-child(2)) {
-    height: 600px;
+    height: 650px;
     width: 380px;
     background-color: white;
     border-radius: 5px;
@@ -259,7 +306,7 @@ section:nth-child(even) {
 
 .ticket:nth-child(2) {
     position: relative;
-    height: 680px;
+    height: 750px;
     width: 450px;
     background-color: white;
     border-radius: 5px;
@@ -333,6 +380,11 @@ p[itemprop="price"] {
     font-size: 0.5em;
 }
 
+.selectADiv {
+    display: flex;
+
+}
+
 form {
     width: 100%;
 
@@ -395,6 +447,10 @@ th {
 
 }
 
+table svg {
+    width: 35px;
+    height: 35px;
+}
 
 /*Footer*/
 

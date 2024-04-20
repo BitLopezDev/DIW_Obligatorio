@@ -40,8 +40,7 @@
                     <br />
                     <div class="top1stButtons">
 
-                        <a href="#ticketSection">Entradas</a> <a
-                                href="#datesSection">Fechas</a>
+                        <a href="#ticketSection">Entradas</a> <a href="#datesSection">Fechas</a>
                     </div>
 
                 </div>
@@ -64,14 +63,27 @@
                     <!-- <#dateCards> -->
 
                     <div class="cardDate">
-                        <h3></h3>
+                        <header>
+                            <h3>1<sup>ro</sup></h3>
+                            <p>Agosto</p>
+                        </header>
+                        <a href="#speackersSection">Ver oradores</a>
                     </div>
                     <div class="cardDate">
-
+                        <header>
+                            <h3>2<sup>do</sup></h3>
+                            <p>Agosto</p>
+                        </header>
+                        <a href="#speackersSection">Ver oradores</a>
                     </div>
                     <div class="cardDate">
-
+                        <header>
+                            <h3>3<sup>ro</sup></h3>
+                            <p>Agosto</p>
+                        </header>
+                        <a href="#speackersSection">Ver oradores</a>
                     </div>
+
                     <!-- </#dateCards> -->
                 </div>
 
@@ -210,6 +222,11 @@
 
 
                         </ul>
+                        <div class="selectADiv">
+                            <a class="TicketA" href="#form">Seleccionar</a>
+
+                        </div>
+                        
                         <!-- </.ticket> -->
                     </div>
                     <div class="ticket">
@@ -346,6 +363,10 @@
                             </li>
 
                         </ul>
+                        <div class="selectADiv">
+                            <a class="TicketA" href="#form">Seleccionar</a>
+
+                        </div>
                         <!-- </.ticket> -->
                     </div>
                     <div class="ticket">
@@ -459,6 +480,10 @@
                             </li>
 
                         </ul>
+                        <div class="selectADiv">
+                            <a class="TicketA" href="#form">Seleccionar</a>
+
+                        </div>
                         <!-- </.ticket> -->
                     </div>
 
@@ -467,7 +492,7 @@
 
                 </div>
 
-                <form action="#" method="post" enctype="multipart/form-data">
+                <form id="form" action="#" method="post" enctype="multipart/form-data">
                     <div>
                         <label for="name">Nombre</label>
                         <input type="text" name="name" placeholder="Nombre" required>
@@ -493,63 +518,97 @@
                 </header>
                 <table>
                     <thead>
+                        <th><svg width="100%" height="100%">
+                            <image xlink:href="./assets/logo.svg" width="100%" height="100%" />
+                        </svg></th>
                         <th>Orador</th>
                         <th>Cargo</th>
-                        <th>Rubro</th>
+                        <th>Rubro/Empresa</th>
                         <th>Fecha</th>
                         <th>Tema</th>
                     </thead>
                     <tbody>
                         <tr>
+                            <td><svg width="100%" height="100%">
+                                <image xlink:href="./assets/logo.svg" width="100%" height="100%" />
+                            </svg></td>
+                            <td> Lucía González</td>
+                            <td>CEO</td>
+                            <td>Macrosoft Inc.</td>
+                            <td>1/08/2024</td>
+                            <td>Intruducción al evento y tecnologías de Macrosoft Inc.</td>
+                        </tr>
+                        <tr>
+                            <td><svg width="100%" height="100%">
+                                <image xlink:href="./assets/security.svg" width="100%" height="100%" />
+                            </svg></td>
                             <td>Lilith Crane</td>
                             <td>CEO</td>
                             <td>Firma de ciberseguridad</td>
-                            <td>Dr.</td>
+                            <td>1/08/2024</td>
                             <td>Comprensión, análisis, reducción y manejo de superficie de ataque</td>
                         </tr>
                         <tr>
+                            <td><svg width="100%" height="100%">
+                                <image xlink:href="./assets/gear.svg" width="100%" height="100%" />
+                            </svg></td>
                             <td>Bill Ford</td>
                             <td>CEO</td>
                             <td>MSSP</td>
-                            <td>Ing.</td>
+                            <td>1/08/2024</td>
                             <td>Filosofía Zero-Trust</td>
                         </tr>
                         <tr>
+                            <td><svg width="100%" height="100%">
+                                <image xlink:href="./assets/cloud.svg" width="100%" height="100%" />
+                            </svg></td>
                             <td>Satya Nutella</td>
                             <td>CEO</td>
                             <td>Software & Cloud Computing</td>
-                            <td>Sr.</td>
+                            <td>1/08/2024</td>
                             <td>Seguridad en CloudOps & DevOps</td>
                         </tr>
                         <tr>
+                            <td><svg width="100%" height="100%">
+                                <image xlink:href="./assets/dev.svg" width="100%" height="100%" />
+                            </svg></td>
                             <td>Mary Cooper</td>
                             <td>CISO</td>
-                            <td>Firma de ciberseguridad</td>
-                            <td>Ing. Dr.</td>
+                            <td>Software Development</td>
+                            <td>2/08/2024</td>
                             <td>El futuro de la seguridad de red: NGFW, NIPS, NDR y demás</td>
                         </tr>
                         <tr>
+                            <td><svg width="100%" height="100%">
+                                <image xlink:href="./assets/security.svg" width="100%" height="100%" />
+                            </svg></td>
                             <td>Catalina de Aragón</td>
                             <td>CEO</td>
                             <td>Firma de ciberseguridad</td>
-                            <td>Ing.</td>
+                            <td>2/08/2024</td>
                             <td>El futuro de SIEMs, SOARs, XDR, XEDR y la importancia de una plataforma de seguridad
                                 unificada</td>
                         </tr>
                         <tr>
+                            <td><svg width="100%" height="100%">
+                                <image xlink:href="./assets/analytics.svg" width="100%" height="100%" />
+                            </svg></td>
                             <td>Claudia Idalgui</td>
                             <td>CISO</td>
                             <td>Firma de ciberseguridad</td>
-                            <td>Ing.</td>
+                            <td>3/08/2024</td>
                             <td>Manejo, administración, interconexión de soluciones de seguridad de distintos
                                 <i>Vendors</i>
                             </td>
                         </tr>
                         <tr>
+                            <td><svg width="100%" height="100%">
+                                <image xlink:href="./assets/security.svg" width="100%" height="100%" />
+                            </svg></td>
                             <td>Natalia Martínez</td>
                             <td>CISO</td>
                             <td>Firma de ciberseguridad</td>
-                            <td>Ing.</td>
+                            <td>3/08/2024</td>
                             <td>Efectos, resultados y necesidad de despliegue de Inteligencia Artificial en la
                                 infraestructura de seguridad de la información y beneficios para el SOC, SecOps y
                                 SecDevOps</td>
