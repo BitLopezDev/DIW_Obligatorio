@@ -80,6 +80,7 @@ nav ul li a:hover {
 /*Main*/
 main {
     margin-top: 10px;
+    margin-bottom: auto;
 }
 
 h1,
@@ -207,6 +208,10 @@ section:nth-child(even) {
 }
 
 /*Ticket section*/
+
+
+
+
 #ticketHeader {
     padding-top: 40px;
 }
@@ -334,4 +339,74 @@ form input {
 form input[type="submit"] {
     background-color: var(--blue);
     color: white;
+}
+
+
+
+
+
+#speackersSection table {
+    margin-top: 50px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+#speackersSection table thead {
+    background-color: var(--grey);
+
+}
+
+#speackersSection td,
+th {
+
+    text-align: center;
+    padding: 8px;
+
+}
+
+#speackersSection tr:nth-child(even) {
+    background-color: var(--grey);
+    border-radius: 5px;
+
+}
+
+
+/*Footer*/
+
+
+footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+}
+
+footer div p {
+    font-size: 3em;
+    color: var(--blue);
+}
+
+footer div svg {
+    height: 100px;
+    align-items: center;
+}
+
+footer ul {
+    margin-right: 30px;
+    list-style-type: none;
+    text-align: center;
+}
+footer ul li:first-child {
+    font-size: 2em;
+    color: var(--blue);
 }
