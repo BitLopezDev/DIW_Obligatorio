@@ -85,7 +85,7 @@ nav ul li a:hover {
 
 /*Main*/
 main {
-    margin-top: 120px;
+    margin-top: 10px;
 }
 
 h1,
@@ -221,28 +221,32 @@ section:nth-child(even) {
 }
 
 /*Ticket section*/
+#ticketHeader{
+    padding-top: 40px;
+}
 .ticketcontainer:not(span[itemprop='price']) {
     display: flex;
     margin: 0 auto;
+    
     justify-content: space-between;
     align-items: center;
-    height: 650px;
+    height: 800px;
     /* background-color: blue; */
-    width: 1200px;
+    width: 1440px;
 }
 
 .ticket:not(:nth-child(2)) {
 
-    height: 450px;
-    width: 300px;
+    height: 600px;
+    width: 380px;
     background-color: white;
     border-radius: 5px;
 }
 
 .ticket:nth-child(2) {
     position: relative;
-    height: 550px;
-    width: 350px;
+    height: 680px;
+    width: 450px;
     background-color: white;
     border-radius: 5px;
 }
@@ -253,11 +257,11 @@ section:nth-child(even) {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: -50px;
+    top: -60px;
     right: -40px;
     width: 120px;
     height: 120px;
-    background-color:var(--dark-cyan);
+    background-color: var(--green);
     background-size: contain;
     z-index: 1;
     border-radius: 100px;
