@@ -439,6 +439,10 @@ form input[type="submit"] {
     background-color: var(--blue);
     color: white;
 }
+form input[type="submit"]:hover {
+    background-color: var(--dark-blue);
+    color: var(--grey);
+}
 
 
 
