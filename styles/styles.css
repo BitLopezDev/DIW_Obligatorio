@@ -88,7 +88,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.blue {
     color: var(--blue);
 }
 
@@ -277,6 +278,29 @@ section:nth-child(even) {
     color: var(--grey);
     background-color: var(--dark-cyan);
 }
+
+/*Garely section*/
+.verticalPic {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.verticalPic figure {
+    bottom: 0;
+
+}
+
+#figcontainer {
+    display: grid;
+    /*  grid-template-rows: ;*/
+}
+
+#figcontainer figure {
+    margin: 10px;
+}
+
+
 
 /*Ticket section*/
 
