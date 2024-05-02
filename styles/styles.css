@@ -219,10 +219,76 @@ section:nth-child(even) {
 }
 
 
-/*GALERY*/
 
 
+/*Dates Section*/
+#datesHeader {
+    margin-top: 150px;
+    padding-top: 30px;
+}
 
+#dateCards {
+    /* background-color: blue; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardDate {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+    width: 270px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.cardDate header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cardDate h3 {
+    font-size: 5em;
+    text-align: center;
+}
+
+.cardDate h3 sup {
+    font-size: 0.5em;
+}
+
+.cardDate h3+p {
+    font-size: 3em;
+    text-align: center;
+    color: var(--dark-cyan);
+}
+
+.cardDate a,
+.TicketA {
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    padding: 10px 50px;
+    margin: 25px auto 10px auto;
+    border: 2px solid var(--grey);
+    border-radius: 5px;
+    color: var(--dark-cyan);
+}
+
+.cardDate a:hover,
+.TicketA:hover {
+    width: 220px;
+    color: var(--grey);
+    background-color: var(--dark-cyan);
+}
+
+/*Garely section*/
 .galery {
     background-repeat: no-repeat;
     background-size: cover;
@@ -239,9 +305,10 @@ section:nth-child(even) {
     height: 1200px;
     width: 1440px;
     margin-bottom: 0;
+
 }
 
-#galeryCards div {
+#galeryCards article {
     border-radius: 10px;
 }
 
@@ -326,74 +393,6 @@ section:nth-child(even) {
     font-size: 1em;
 }
 
-/*Dates Section*/
-#datesHeader {
-    margin-top: 150px;
-    padding-top: 30px;
-}
-
-#dateCards {
-    /* background-color: blue; */
-    width: 100%;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cardDate {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 300px;
-    width: 270px;
-    background-color: white;
-    margin: 0 auto;
-    border-radius: 5px;
-}
-
-.cardDate header {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.cardDate h3 {
-    font-size: 5em;
-    text-align: center;
-}
-
-.cardDate h3 sup {
-    font-size: 0.5em;
-}
-
-.cardDate h3+p {
-    font-size: 3em;
-    text-align: center;
-    color: var(--dark-cyan);
-}
-
-.cardDate a,
-.TicketA {
-    margin: 0 auto;
-    text-align: center;
-    text-decoration: none;
-    width: 200px;
-    padding: 10px 50px;
-    margin: 25px auto 10px auto;
-    border: 2px solid var(--grey);
-    border-radius: 5px;
-    color: var(--dark-cyan);
-}
-
-.cardDate a:hover,
-.TicketA:hover {
-    width: 220px;
-    color: var(--grey);
-    background-color: var(--dark-cyan);
-}
-
-/*Garely section*/
 .verticalPic {
     /* background-color: red; */
     display: flex;
