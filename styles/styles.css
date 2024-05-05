@@ -460,8 +460,8 @@ section:nth-child(even) {
     width: 135px;
     height: 135px;
     background-color: var(--green);
-    background-size: contain;
-    z-index: 1;
+    /* background-size: contain;
+    z-index: 1; */
     border-radius: 100px;
 }
 
