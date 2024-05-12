@@ -28,10 +28,7 @@
     scroll-behavior: smooth;
 }
 
-/*
-body *:not(header, header *, footer, footer *, main, section) {
-    margin-left: 40px;
-}*/
+
 
 nav {
     width: 100%;
@@ -293,7 +290,10 @@ section:nth-child(even) {
 .galery {
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 #galeryCards {
@@ -311,6 +311,27 @@ section:nth-child(even) {
 
 #galeryCards article {
     border-radius: 10px;
+}
+
+.galeryText {
+
+    margin: 0;
+    color: white;
+    padding: 0 0 10px 10px;
+
+
+
+
+}
+
+.galeryText h3 {
+    color: white;
+    font-size: 3em;
+}
+
+.galeryText p {
+    color: white;
+    font-size: 1em;
 }
 
 .Laracroft {
@@ -380,43 +401,14 @@ section:nth-child(even) {
 }
 
 /*/
-TODO: change absolute por flex (flex-end) etc
+
 TODO: gradiente en background image
 
 
 */
-.galeryText {
-    position: absolute;
-    margin: 0 auto;
-    color: white;
-    bottom: 20px;
-    left: 15px;
 
 
-    z-index: 5;
 
-}
-
-.galeryText h3 {
-    color: white;
-    font-size: 3em;
-}
-
-.galeryText p {
-    color: white;
-    font-size: 1em;
-}
-
-.verticalPic {
-    /* background-color: red; */
-    display: flex;
-    flex-direction: column;
-}
-
-.verticalPic figure {
-    bottom: 0;
-
-}
 
 #figcontainer {
     display: grid;
@@ -458,15 +450,7 @@ TODO: gradiente en background image
 }
 
 
-/*
 
-
-
-TODO: agregar dos imágenes horizontales
-
-
-
-*/
 .ticket:not(:nth-child(2)) {
     height: 650px;
     width: 380px;
