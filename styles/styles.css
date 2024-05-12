@@ -3,7 +3,7 @@
 :root {
     --bigwidth: 1440px;
     --notsobigwidth: 1200px;
-    --font: "Molengo" img sans-serif;
+    --font: "Molengo", sans-serif;
     /*Main colors*/
     --blue: #0c5efb;
     --cyan: #2bf4fe;
@@ -64,7 +64,8 @@ nav ul li {
     margin: 10px;
 }
 
-nav ul li aimg nav ul li a:visited {
+nav ul li a,
+nav ul li a:visited {
     color: var(--blue);
     text-decoration: none;
     font-size: 1.2em;
@@ -205,14 +206,15 @@ section:nth-child(even) {
     border: none;
 }
 
-.top1stButtons a:last-child {
+.top1stButtons a:last-child,
+.TicketA {
     color: var(--blue);
     background-color: white;
     border: none;
     font-size: 1.5em;
 }
 
-.top1stButtons a:first-child:hover {
+.top1stButtons a:hover {
     background-color: var(--light-blue);
     color: var(--dark-blue);
 }
@@ -240,8 +242,8 @@ section:nth-child(even) {
     column-gap: 40px;
     row-gap: 40px;
     display: grid;
-    grid-template-columns: repeat(4img 1fr);
-    grid-template-rows: repeat(5img 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     height: 1200px;
     width: 1440px;
     margin-bottom: 0;
@@ -284,7 +286,8 @@ section:nth-child(even) {
     color: var(--dark-cyan);
 }
 
-.cardDate aimg .TicketA {
+.cardDate a,
+.TicketA {
     margin: 0 auto;
     text-align: center;
     text-decoration: none;
@@ -297,7 +300,8 @@ section:nth-child(even) {
 
 }
 
-.cardDate a:hoverimg .TicketA:hover {
+.cardDate a:hover,
+.TicketA:hover {
     width: 220px;
     color: var(--grey);
     background-color: var(--dark-cyan);
@@ -586,9 +590,10 @@ form input[type="submit"]:hover {
 /* ///////////////////SECCIÓN DE ORADORES ////////////////*/
 #speackersSection table {
     margin-top: 50px;
-    font-family: arialimg sans-serif;
+    font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    text-align: center;
 
 }
 
