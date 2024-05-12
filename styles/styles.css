@@ -3,7 +3,7 @@
 :root {
     --bigwidth: 1440px;
     --notsobigwidth: 1200px;
-    --font: "Molengo", sans-serif;
+    --font: "Molengo" img sans-serif;
     /*Main colors*/
     --blue: #0c5efb;
     --cyan: #2bf4fe;
@@ -48,7 +48,7 @@ nav div p {
     color: var(--blue);
 }
 
-nav div svg {
+nav div img {
     height: 100px;
     align-items: center;
 }
@@ -64,8 +64,7 @@ nav ul li {
     margin: 10px;
 }
 
-nav ul li a,
-nav ul li a:visited {
+nav ul li aimg nav ul li a:visited {
     color: var(--blue);
     text-decoration: none;
     font-size: 1.2em;
@@ -116,6 +115,10 @@ main section {
     margin-bottom: 50px;
 }
 
+section:nth-child(even) {
+    background-color: var(--grey);
+}
+
 .container {
     min-width: 1200px;
     max-width: 1440px;
@@ -128,15 +131,13 @@ main section {
     justify-content: center;
 }
 
-.container1:first-child svg {
+.container1:first-child img {
     margin-top: -60px;
     width: 650px;
     height: 650px;
 }
 
-section:nth-child(even) {
-    background-color: var(--grey);
-}
+
 
 .vertical:not(:first-child) {
     display: flex;
@@ -234,6 +235,23 @@ section:nth-child(even) {
     justify-content: space-between;
 }
 
+#galeryCards {
+    margin-top: 50px;
+    column-gap: 40px;
+    row-gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(4img 1fr);
+    grid-template-rows: repeat(5img 1fr);
+    height: 1200px;
+    width: 1440px;
+    margin-bottom: 0;
+
+}
+
+#galeryCards article {
+    border-radius: 10px;
+}
+
 .cardDate {
     display: flex;
     justify-content: center;
@@ -266,27 +284,29 @@ section:nth-child(even) {
     color: var(--dark-cyan);
 }
 
-.cardDate a,
-.TicketA {
+.cardDate aimg .TicketA {
     margin: 0 auto;
     text-align: center;
     text-decoration: none;
-    width: 200px;
+    width: 220px;
     padding: 10px 50px;
     margin: 25px auto 10px auto;
     border: 2px solid var(--grey);
     border-radius: 5px;
     color: var(--dark-cyan);
+
 }
 
-.cardDate a:hover,
-.TicketA:hover {
+.cardDate a:hoverimg .TicketA:hover {
     width: 220px;
     color: var(--grey);
     background-color: var(--dark-cyan);
+
 }
 
-/*Garely section*/
+
+
+/* //////////////////////////////// Garely section ////////////////////*/
 .galery {
     background-repeat: no-repeat;
     background-size: cover;
@@ -296,22 +316,7 @@ section:nth-child(even) {
     justify-content: flex-end;
 }
 
-#galeryCards {
-    margin-top: 50px;
-    column-gap: 40px;
-    row-gap: 40px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    height: 1200px;
-    width: 1440px;
-    margin-bottom: 0;
 
-}
-
-#galeryCards article {
-    border-radius: 10px;
-}
 
 .galeryText {
 
@@ -400,43 +405,28 @@ section:nth-child(even) {
 
 }
 
-/*/
+/* ///////////////////SECCIÓN DE TICKETS ////////////////*/
 
-TODO: gradiente en background image
-
-
-*/
-
-
-
-
-#figcontainer {
-    display: grid;
-    /*  grid-template-rows: ;*/
-}
-
-#figcontainer figure {
-    margin: 10px;
-}
-
-
-
-/*Ticket section*/
-
-/*TODO: ORDENAR
-
- de menos específico a más específico, tags enerales arriba, index
-*/
 
 #ticketHeader {
     padding-top: 40px;
     justify-content: flex-start;
 }
 
+p[itemprop="price"] {
+    color: var(--dark-cyan);
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
 .ticket>header {
     padding: 20px 20px 0 20px;
 
 }
+
+
 
 .ticketcontainer:not(span[itemprop="price"]) {
     display: flex;
@@ -452,7 +442,7 @@ TODO: gradiente en background image
 
 
 .ticket:not(:nth-child(2)) {
-    height: 650px;
+    height: 680px;
     width: 380px;
     background-color: white;
     border-radius: 5px;
@@ -461,7 +451,7 @@ TODO: gradiente en background image
 
 .ticket:nth-child(2) {
     position: relative;
-    height: 750px;
+    height: 770px;
     width: 450px;
     background-color: white;
     border-radius: 5px;
@@ -497,13 +487,7 @@ TODO: gradiente en background image
     font-size: 1.5em;
 }
 
-p[itemprop="price"] {
-    color: var(--dark-cyan);
-    margin-left: 40px;
-    margin-top: 20px;
-    font-size: 2em;
-    margin-bottom: 15px;
-}
+
 
 .ticketcontainer .ticket ul {
     margin-left: 10px;
@@ -511,7 +495,7 @@ p[itemprop="price"] {
     list-style-position: outside;
 }
 
-.ticketcontainer .ticket ul li svg {
+.ticketcontainer .ticket ul li img {
     width: 35px;
     height: 35px;
 }
@@ -541,15 +525,7 @@ p[itemprop="price"] {
 }
 
 form {
-    /* display: flex;
-   
 
-    justify-content: space-between;
-
-    height: 1050px;
-  
-    */
-    /* width: 100%; */
     width: 1440px;
     margin: 80px auto 0 auto;
     display: flex;
@@ -607,11 +583,10 @@ form input[type="submit"]:hover {
 
 
 
-
-
+/* ///////////////////SECCIÓN DE ORADORES ////////////////*/
 #speackersSection table {
     margin-top: 50px;
-    font-family: arial, sans-serif;
+    font-family: arialimg sans-serif;
     border-collapse: collapse;
     width: 100%;
 
@@ -622,8 +597,7 @@ form input[type="submit"]:hover {
 
 }
 
-#speackersSection td,
-th {
+#speackersSection tdimg th {
 
     text-align: center;
     padding: 8px;
@@ -636,12 +610,12 @@ th {
 
 }
 
-table svg {
+table img {
     width: 35px;
     height: 35px;
 }
 
-/*Footer*/
+/* ///////////////////FOOTER ////////////////*/
 
 
 footer {
@@ -664,7 +638,7 @@ footer div p {
     color: var(--blue);
 }
 
-footer div svg {
+footer div img {
     height: 100px;
     align-items: center;
 }
