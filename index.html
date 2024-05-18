@@ -7,8 +7,8 @@
     <title>Oblogatorio DIW</title>
     <meta name="description" content="Oblogatorio DIW N1B.">
     <meta name="author" content="Santiago Comesaña López | 327146 | N1B">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="shortcut icon" href="assets/logo.svg" type="svg">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="shortcut icon" href="assets/logo.svg" />
 </head>
 
 <body>
@@ -174,7 +174,8 @@
                             <h3>Tertulia</h3>
                             <p>Perfecto para aficionados.</p>
                         </header>
-                        <p itemprop="price"><span class="oldprice">80$</span>&nbsp;50 $&nbsp;<span class="shmol">Por
+                        <p data-itemprop="price"><span class="oldprice">80$</span>&nbsp;50 $&nbsp;<span
+                                class="shmol">Por
                                 tiempo limitado</span></p>
 
                         <ul>
@@ -277,7 +278,7 @@
                             <h3>VIP</h3>
                             <p>Perfecto para profesionales, periodistas y CISOs</p>
                         </header>
-                        <p itemprop="price">400 $</p>
+                        <p data-itemprop="price">400 $</p>
 
                         <ul>
                             <li>Ubicación: Platea primeras 2 filas</li>
@@ -389,7 +390,7 @@
                             <h3>Premium</h3>
                             <p>Ideal para profesionales</p>
                         </header>
-                        <p itemprop="price">
+                        <p data-itemprop="price">
                             250 $</p>
 
                         <ul>
@@ -492,7 +493,7 @@
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
                     </div>
                     <div>
 
@@ -510,12 +511,14 @@
                 </header>
                 <table>
                     <thead>
-                        <th></th>
-                        <th>Orador</th>
-                        <th>Cargo</th>
-                        <th>Rubro/Empresa</th>
-                        <th>Fecha</th>
-                        <th>Tema</th>
+                        <tr>
+                            <th></th>
+                            <th>Orador</th>
+                            <th>Cargo</th>
+                            <th>Rubro/Empresa</th>
+                            <th>Fecha</th>
+                            <th>Tema</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -649,33 +652,31 @@
         </section>
     </main>
 
-</body>
 
 
 
-<!-- </.container> -->
-</div>
-</section>
-</main>
 
-<footer>
-    <div>
-        <img src="./assets/logo.svg" alt="Logo Macrosoft" />
-        <p>Macrosoft</p>
-    </div>
-    <div>
-        <ul>
-            <li>Santiago Comesaña López</li>
-            <li>327146</li>
-            <li>N1B | ATI</li>
+    <!-- </.container> -->
 
 
+    <footer>
+        <div>
+            <img src="./assets/logo.svg" alt="Logo Macrosoft" />
+            <p>Macrosoft</p>
+        </div>
+        <div>
+            <ul>
+                <li>Santiago Comesaña López</li>
+                <li>327146</li>
+                <li>N1B | ATI</li>
 
-        </ul>
-    </div>
 
 
-</footer>
+            </ul>
+        </div>
+
+
+    </footer>
 </body>
 
 </html>

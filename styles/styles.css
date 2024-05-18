@@ -417,7 +417,7 @@ section:nth-child(even) {
     justify-content: flex-start;
 }
 
-p[itemprop="price"] {
+p[data-itemprop="price"] {
     color: var(--dark-cyan);
     margin-left: 40px;
     margin-top: 20px;
@@ -432,7 +432,7 @@ p[itemprop="price"] {
 
 
 
-.ticketcontainer:not(span[itemprop="price"]) {
+.ticketcontainer:not(span[data-itemprop="price"]) {
     display: flex;
     margin: 80px auto 0 auto;
 
